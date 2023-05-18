@@ -7,7 +7,7 @@
         <h1>Criar novo usuário</h1>
     </div>
 
-    <form action="?page=salvar" method="POST">
+    <form action="?page=listar" method="POST">
         <input type="hidden" name="acao" value="cadastrar">
         <div class="mb-3">
             <label>Nome</label>
@@ -26,7 +26,7 @@
             <input type="date" name="data_nasc" class="form-control" required>
         </div>
         <div class="mb-3">
-            <button type="submit" class="btn btn-dark">Enviar</button>
+            <button id="submitCad" type="submit" class="btn btn-dark">Enviar</button>
         </div>
     </form>
 

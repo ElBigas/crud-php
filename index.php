@@ -58,7 +58,7 @@
                         break;
                     case 'salvar':
                         include('salvar-usuario.php');
-                        break;                    
+                        break;
                     default:
                         print '<h1>Seja bem vindo!</h1>';
                 };

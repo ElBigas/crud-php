@@ -5,4 +5,4 @@ define('USER', 'root');
 define('PASS', '');
 define('BASE', 'cadastro');
 
-$conecao = new mysqli(HOST, USER, PASS, BASE);
+$conexao = new mysqli(HOST, USER, PASS, BASE);

@@ -12,10 +12,15 @@ switch ($_REQUEST['acao']) {
         VALUES 
         ('{$nome}', '{$email}', '{$senha}', '{$data_nasc}')";
 
-        $resultado = $conecao->query($sql);
+        $resultado = $conexao->query($sql);
 
-        if($resultado){
-            include('cad-true.php');
+        if ($resultado) {
+            print "<script>
+            alert('Cadastro realizado com sucesso!')
+            </script>";
+            print "<script>
+            location.href='?page=listar'; 
+            </script>";
         }
         break;
 
