@@ -2,7 +2,7 @@
 
 Projeto realizado no decorrer do professor Eliel Cruz, disponível <a href="https://www.youtube.com/watch?v=BSqtIw_hW8M" target="_blank">neste link<a>.
 
-<br />
+<hr />
 
 No arquivo 'index.php', foi incluido o arquivo de configuração, onde foi feita a conexão com o banco de dados. Também no 'index' é verificado na URL o 'page' e será incluido a página correspondente, o padrão é uma tela de bem vindos. Caso seja 'novo', será incluido o arquivo 'novo-usuario.php', caso 'listar' será 'listar-usuario.php', caso 'salvar' será 'salvar-usuario.php' e caso 'editar' será incluido 'editar-usuario.php'.
 
