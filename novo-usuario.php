@@ -7,8 +7,10 @@
         <h1>Criar novo usuário</h1>
     </div>
 
-    <form action="?page=listar" method="POST">
+    <form action="?page=salvar" method="POST">
+
         <input type="hidden" name="acao" value="cadastrar">
+
         <div class="mb-3">
             <label>Nome</label>
             <input type="text" name="nome" class="form-control" required>

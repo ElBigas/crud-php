@@ -20,6 +20,7 @@
 
 <body>
 
+    <!-- esta é uma navbar presetada do bootstrap, feita apenas algumas mudanças -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php">My CRUD</a>
@@ -46,7 +47,10 @@
         <div class="row">
             <div class="col mt-5">
                 <?php
+                //foi incluido o arquivo de configuração, onde é feita a conexão com o bando de dados
                 include("config.php");
+
+                //será verificado na URL o 'page' e será incluido a página correspondente, o padrão é uma tela de bem vindos
                 switch (@$_REQUEST['page']) {
 
                     case 'novo':
@@ -56,9 +60,15 @@
                     case 'listar':
                         include('listar-usuario.php');
                         break;
+
                     case 'salvar':
                         include('salvar-usuario.php');
                         break;
+
+                    case 'editar':
+                        include('editar-usuario.php');
+                        break;
+
                     default:
                         print '<h1>Seja bem vindo!</h1>';
                 };
